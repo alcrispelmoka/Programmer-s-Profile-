@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alcris Joshua D. Pelmoka | BSIT Student</title>
+  <meta name="description" content="Portfolio of Alcris Joshua D. Pelmoka, 3rd year BSIT student specializing in Network Development Management at NVSU." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Sora:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="progress" id="progress"></div>
 
+  <header class="nav" id="nav">
+    <a class="brand" href="#home">Alcris P.</a>
+    <nav id="menu" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="theme" class="icon-btn" aria-label="Toggle dark mode">◐</button>
+      <button id="burger" class="icon-btn burger" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <canvas id="net" aria-hidden="true"></canvas>
+      <div class="wrap hero-inner">
+        <p class="hello">HUYY BUSSENG!!</p>
+        <h1>I'm Alcris Joshua D. Pelmoka.</h1>
+        <p class="role">I'm a <span id="typed"></span><span class="caret">|</span></p>
+        <p class="lead">3rd year BSIT student at Nueva Vizcaya State University, learning how networks are built, secured, and kept running.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">See my project</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+        <blockquote>"It's better to be late than never"</blockquote>
+      </div>
+      <a class="scroll-hint" href="#about" aria-label="Scroll to About">Scroll ↓</a>
+    </section>
+
+    <section class="block" id="about">
+      <div class="wrap">
+        <h2>About me</h2>
+        <div class="about-grid">
+          <p class="big">I'm studying Information Technology with a focus on networks. I like understanding how data moves from one device to another, and how to protect it along the way.</p>
+          <dl class="facts">
+            <div><dt>University</dt><dd>Nueva Vizcaya State University (NVSU)</dd></div>
+            <div><dt>Course</dt><dd>Bachelor of Science in Information Technology</dd></div>
+            <div><dt>Specialization</dt><dd>Network Development Management (NDM), 3rd Year</dd></div>
+            <div><dt>Current focus</dt><dd>Advanced network infrastructures, network security, and systems administration</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="block alt" id="skills">
+      <div class="wrap">
+        <h2>Tech stack and tools</h2>
+        <p class="sub">What I'm learning and using right now.</p>
+        <div class="skills">
+          <article class="skill">
+            <h3>Networking and systems</h3>
+            <ul class="tags"><li>Cisco Packet Tracer</li><li>Subnetting</li><li>Routing and switching</li></ul>
+          </article>
+          <article class="skill">
+            <h3>Programming and scripting</h3>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>Python</li><li>Java</li></ul>
+          </article>
+          <article class="skill">
+            <h3>Tools and editors</h3>
+            <ul class="tags"><li>Git</li><li>GitHub</li><li>VS Code</li><li>Windows</li><li>Linux</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="projects">
+      <div class="wrap">
+        <h2>Projects</h2>
+        <article class="project">
+          <div>
+            <h3>PassTrack</h3>
+            <p class="meta">Capstone project proposal</p>
+            <p>An academic monitoring system. Students check their grades, attendance, and activity scores. Instructors and authorized personnel enter and update those records.</p>
+            <ul class="tags"><li>Students</li><li>Instructors</li><li>Academic records</li></ul>
+          </div>
+          <div class="mock" aria-hidden="true">
+            <div class="row"><span>Attendance</span><b>94%</b></div>
+            <div class="bar"><i style="width:94%"></i></div>
+            <div class="row"><span>Activity scores</span><b>88%</b></div>
+            <div class="bar"><i style="width:88%"></i></div>
+            <div class="row"><span>Standing</span><b>Passing</b></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="block alt" id="contact">
+      <div class="wrap narrow">
+        <h2>Let's work together</h2>
+        <p class="sub">Feel free to explore my repositories or reach out for collaborations.</p>
+        <div class="cta">
+          <!-- Replace YOUR_USERNAME and the email with your own -->
+          <a class="btn primary" href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener">View my GitHub</a>
+          <a class="btn" href="mailto:your.email@example.com">Send an email</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>© <span id="year"></span> Alcris Joshua D. Pelmoka</p>
+  </footer>
+
+  <button id="top" class="to-top" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+    </html>
